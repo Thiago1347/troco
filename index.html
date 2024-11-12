@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo do Troco</title>
+</head>
+<body>
+
+    <h2>Cálculo do Troco</h2>
+
+    <label for="total">Total da Compra: R$</label>
+    <input type="number" id="total" placeholder="Digite o valor total" step="0.01">
+    <br><br>
+
+    <label for="valorPago">Valor Pago: R$</label>
+    <input type="number" id="valorPago" placeholder="Digite o valor pago" step="0.01">
+    <br><br>
+
+    <button onclick="calcularTroco()">Calcular Troco</button>
+
+    <script>
+        function calcularTroco() {
+            const total = parseFloat(document.getElementById('total').value);
+            const valorPago = parseFloat(document.getElementById('valorPago').value);
+
+            // Calcular e exibir o troco
+            const troco = valorPago - total;
+            alert(`O valor do troco é: R$${troco.toFixed(2)}`);
+        }
+    </script>
+
+</body>
+</html>
+
+        
+    </script>
+
+</body>
+</html>
